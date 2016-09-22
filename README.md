@@ -29,6 +29,10 @@ Install dependencies:
 npm install
 ```
 
+## Stack Editions:
+
+> If you are looking for Angular 1.5.x + Webpack stack then visit "[aw-stack](https://github.com/hegdeashwin/aw-stack)"
+
 ## Author & Contributors
 
 Developed &amp; maintained by author: Ashwin Hegde and contributions.
