@@ -13,15 +13,6 @@ Assuming that Git is already installed & running:
 git clone https://github.com/hegdeashwin/aw-stack-2.git
 ```
 
-Installing Karma-cli, Webpack and http-server npm packages globally
-```
-npm install -g karma-cli
-
-npm install -g webpack
-
-npm install -g http-server
-```
-
 Assuming that Node.js and npm is already installed & running,
 
 Install dependencies:
