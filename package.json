@@ -3,7 +3,9 @@
   "version": "0.0.2",
   "description": "A aw-stack-2 is a Angular.js 2.0, Webpack, ES6 (ECMAScript 2015), TypeScript, Babel, Karma, Jasmine, Twitter Bootstrap, LESS , ESLint, LESSHint front-end stack.",
   "scripts": {
-    "start": "lite-server -c bs-config.json",
+    "start:server": "NODE_ENV=production node server.js",
+    "start:dev": "lite-server -c bs-config.json",
+    "docker": "NODE_ENV=production nodejs server.js",
     "dist:clean": "rimraf dist",
     "coverage:clean": "rimrag coverage",
     "bundle": "npm run dist:clean && webpack -d --watch",
@@ -38,7 +40,9 @@
     "@angular/router": "3.1.1",
     "rxjs": "5.0.0-beta.12",
     "zone.js": "^0.6.25",
-    "reflect-metadata": "^0.1.8"
+    "reflect-metadata": "^0.1.8",
+    "express": "~4.14.0",
+    "body-parser": "~1.15.2"
   },
   "devDependencies": {
     "angular-mock": "^1.0.0",
