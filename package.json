@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "A aw-stack-2 is a Angular.js 2.0, Webpack, ES6 (ECMAScript 2015), TypeScript, Babel, Karma, Jasmine, Twitter Bootstrap, LESS , ESLint, LESSHint front-end stack.",
   "scripts": {
-    "start": "http-server",
-    "dev": "webpack -d --watch",
-    "build": "webpack -p -d",
-    "test": "karma start",
+    "start": "lite-server -c bs-config.json",
+    "dist:clean": "rimraf dist",
+    "coverage:clean": "rimrag coverage",
+    "bundle": "npm run dist:clean && webpack -d --watch",
+    "build": "npm run dist:clean && webpack -p -d",
+    "test:all": "karma start",
     "postinstall": "typings install"
   },
   "repository": {
@@ -49,7 +51,6 @@
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
-    "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^1.1.2",
     "karma-babel-preprocessor": "^6.0.1",
@@ -61,6 +62,8 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "lesshint": "^2.0.2",
+    "lite-server": "^2.2.2",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
