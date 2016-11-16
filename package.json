@@ -10,7 +10,7 @@
     "build": "npm run dist:clean && webpack -p -d",
     "test:all": "karma start",
     "postinstall": "typings install",
-    "lint:all": "tslint -c tslint.json 'src/**/*.ts'"
+    "lint:ts": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
