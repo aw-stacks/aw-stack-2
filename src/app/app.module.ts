@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { HomeComponent } from './pages/home/home';
+import { NgModule } from "@angular/core";
+import { BrowserModule }  from "@angular/platform-browser";
+import { HomeComponent } from "./pages/home/home";
 
 @NgModule({
   imports: [BrowserModule],
