@@ -1,6 +1,6 @@
 {
   "name": "aw-stack-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A aw-stack-2 is a Angular.js 2.0, Webpack, ES6 (ECMAScript 2015), TypeScript, Babel, Karma, Jasmine, Twitter Bootstrap, LESS , ESLint, LESSHint front-end stack.",
   "scripts": {
     "start": "lite-server -c bs-config.json",
