@@ -19,14 +19,14 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.ts/,
-      loaders: ['ts-loader'],
+      loaders: ['awesome-typescript-loader', 'angular2-template-loader'],
       exclude: /node_modules/
     }, {
       test: /\.(jpg|jpeg|png|gif|svg)$/i,
       loader: 'file'
     }, {
       test: /\.(html)$/i,
-      loader: 'file?name=[name].[ext]',
+      loader: 'raw?name=[name].[ext]',
       include: [
         path.resolve(__dirname, 'src', 'app')
       ]

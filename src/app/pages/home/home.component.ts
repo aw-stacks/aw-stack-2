@@ -3,7 +3,7 @@ import "./home.component.less";
 
 @Component({
   selector: "home-component",
-  templateUrl: require("./home.component.html")
+  templateUrl: "./home.component.html"
 })
 
 export class HomeComponent { }
